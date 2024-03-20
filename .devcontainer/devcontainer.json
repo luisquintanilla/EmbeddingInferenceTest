@@ -1,0 +1,22 @@
+{
+    "name": ".NET HF Text Embedding Inference Test",
+    "image": "mcr.microsoft.com/devcontainers/universal:linux",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+        "ghcr.io/devcontainers/features/nvidia-cuda:1": {},
+        "ghcr.io/devcontainers/features/dotnet": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode-remote.vscode-remote-extensionpack",
+                "ms-dotnettools.dotnet-interactive-vscode",
+				"ms-dotnettools.csdevkit"                
+            ]
+        }
+    },
+    "runArgs": [
+		"--gpus",
+		"all"
+	]
+}
