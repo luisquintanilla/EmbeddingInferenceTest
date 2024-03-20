@@ -488,4 +488,5 @@ $RECYCLE.BIN/
 dotnet-install.sh
 
 # Data folder
-**/data/*
+EmbeddingInferenceTest/data/*.parquet
+data/
